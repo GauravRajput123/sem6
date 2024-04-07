@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Movies>
+    <MovieInfo>
+        <MovieNo>1</MovieNo>
+        <MovieTitle>Fighter</MovieTitle>
+        <ActorName>Hrithik Roshan</ActorName>
+        <ReleaseYear>2024</ReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>2</MovieNo>
+        <MovieTitle>Gadar 2</MovieTitle>
+        <ActorName>Sunny Deol</ActorName>
+        <ReleaseYear>2023</ReleaseYear>
+    </MovieInfo>
+    <!-- Add more MovieInfo elements as needed -->
+</Movies>

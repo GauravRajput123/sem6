@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact List</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#printBtn").click(function () {
+                    $.ajax({
+                        url: "contact.dat",
+                        type: "GET",
+                        dataType: "text",
+                        success: function (data) {
+                            // Parse the data and generate HTML table
+                            var rows = data.split("\n");
+                            var table = "<table border='1'><tr><th>Sr. No.</th><th>Name</th><th>Residence Number</th><th>Mobile Number</th><th>Address</th></tr>";
+                            for (var i = 0; i < rows.length; i++) {
+                                var columns = rows[i].split(",");
+                                table += "<tr>";
+                                for (var j = 0; j < columns.length; j++) {
+                                    table += "<td>" + columns[j] + "</td>";
+                                }
+                                table += "</tr>";
+                            }
+                            table += "</table>";
+
+                            // Display the table in a div
+                            $("#contactTable").html(table);
+                        },
+                        error: function (xhr, status, error) {
+                            console.log("Error: " + error);
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Contact List</h2>
+        <button id="printBtn">Print Contact List</button>
+        <div id="contactTable"></div>
+    </body>
+</html>

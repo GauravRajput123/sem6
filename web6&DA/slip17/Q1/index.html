@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<script>
+    // Function to display "Hello Good Morning" message using alert box
+    function displayMessage() {
+        alert("Hello! Good Morning");
+    }
+
+    // Function to handle form submission
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var age = document.getElementById("age").value;
+
+        // Perform validation if needed
+
+        // Display submitted information
+        alert("Student Name: " + name + "\nEmail: " + email + "\nAge: " + age);
+    }
+</script>
+</head>
+<body onload="displayMessage()">
+    <h2>Student Registration Form</h2>
+    <form id="registrationForm" onsubmit="event.preventDefault(); submitForm();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

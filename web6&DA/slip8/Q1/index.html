@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // Display a message using an alert box
+            alert("Exams are near, have you started preparing for?");
+
+// Prompt the user to enter the first number
+            var firstNumber = prompt("Enter the first number:");
+
+// Check if the user has entered a number
+            if (firstNumber !== null && !isNaN(firstNumber)) {
+                // Prompt the user to enter the second number
+                var secondNumber = prompt("Enter the second number:");
+
+                // Check if the user has entered a number
+                if (secondNumber !== null && !isNaN(secondNumber)) {
+                    // Convert the input strings to numbers and calculate the sum
+                    var sum = parseFloat(firstNumber) + parseFloat(secondNumber);
+
+                    // Display the addition of two numbers using a confirm box
+                    confirm("The addition of " + firstNumber + " and " + secondNumber + " is: " + sum);
+                } else {
+                    // Display an error message if the second input is invalid
+                    alert("Invalid input for the second number.");
+                }
+            } else {
+                // Display an error message if the first input is invalid
+                alert("Invalid input for the first number.");
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

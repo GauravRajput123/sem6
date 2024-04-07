@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>Book 1</title>
+        <author>Author 1</author>
+        <year>2020</year>
+        <price>10.00</price>
+    </book>
+    <book>
+        <title>Book 2</title>
+        <author>Author 2</author>
+        <year>2019</year>
+        <price>15.00</price>
+    </book>
+    <!-- Add more book details as needed -->
+</books>

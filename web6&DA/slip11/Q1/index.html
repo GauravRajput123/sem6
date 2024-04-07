@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Name</title>
+<script>
+function changeStyle() {
+    var studentName = document.getElementById("studentName").value;
+    var nameDisplay = document.getElementById("nameDisplay");
+    var imageDisplay = document.getElementById("imageDisplay");
+
+    if (studentName !== "") {
+        // Change font color to red and font size to 18 if student name is present
+        nameDisplay.style.color = "red";
+        nameDisplay.style.fontSize = "18px";
+    } else {
+        // If text box is empty, display image and handle events
+        imageDisplay.style.display = "block";
+
+        // Change image size on mouse hover
+        imageDisplay.onmouseover = function() {
+            this.style.width = "200px";
+            this.style.height = "200px";
+        };
+
+        // Restore image size on mouse out
+        imageDisplay.onmouseout = function() {
+            this.style.width = "150px";
+            this.style.height = "150px";
+        };
+
+        // Change image size on mouse click
+        imageDisplay.onmousedown = function() {
+            this.style.width = "250px";
+            this.style.height = "250px";
+        };
+
+        // Restore image size on mouse up
+        imageDisplay.onmouseup = function() {
+            this.style.width = "150px";
+            this.style.height = "150px";
+        };
+    }
+}
+</script>
+</head>
+<body>
+<h2>Enter Student Name:</h2>
+<input type="text" id="studentName" onblur="changeStyle()">
+<p id="nameDisplay">Student Name Display</p>
+<img id="imageDisplay" src="https://via.placeholder.com/150" style="display: none;">
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<library>
+    <book year="2005">
+        <title>PHP Cookbook</title>
+        <author>David Sklar, Adam Trachtenberg</author>
+        <price>23.95</price>
+    </book>
+    <book year="2010">
+        <title>JavaScript: The Good Parts</title>
+        <author>Douglas Crockford</author>
+        <price>19.99</price>
+    </book>
+    <!-- Add more <book> elements as needed -->
+</library>
+
