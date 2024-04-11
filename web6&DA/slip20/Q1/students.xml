@@ -1,53 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<students>
-    <student>
-        <id>1</id>
-        <name>John Doe</name>
-        <age>20</age>
-        <grade>A</grade>
-        <address>
-            <city>New York</city>
-            <country>USA</country>
-        </address>
-    </student>
-    <student>
-        <id>2</id>
-        <name>Alice Smith</name>
-        <age>22</age>
-        <grade>B+</grade>
-        <address>
-            <city>Los Angeles</city>
-            <country>USA</country>
-        </address>
-    </student>
-    <student>
-        <id>3</id>
-        <name>Michael Johnson</name>
-        <age>21</age>
-        <grade>A-</grade>
-        <address>
-            <city>Chicago</city>
-            <country>USA</country>
-        </address>
-    </student>
-    <student>
-        <id>4</id>
-        <name>Sarah Lee</name>
-        <age>23</age>
-        <grade>B</grade>
-        <address>
-            <city>Houston</city>
-            <country>USA</country>
-        </address>
-    </student>
-    <student>
-        <id>5</id>
-        <name>David Brown</name>
-        <age>19</age>
-        <grade>C+</grade>
-        <address>
-            <city>Miami</city>
-            <country>USA</country>
-        </address>
-    </student>
-</students>
+<?xml version="1.0" ?>
+    <StudentDetails>
+        <student>
+            <name>Harish</name>
+            <class>TYBCS</class>
+            <branch>CS</branch>
+        </student>
+        <student>
+            <name>Pratik</name>
+            <class>TYBCS</class>
+            <branch>CS</branch>
+        </student>
+        <student>
+            <name>Gaurav</name>
+            <class>BTECH</class>
+            <branch>CSE</branch>
+        </student>
+        <student>
+            <name>Rakesh</name>
+            <class>SYBCS</class>
+            <branch>CS</branch>
+        </student>
+        <student>
+            <name>Roahn</name>
+            <class>TYBCS</class>
+            <branch>CS</branch>
+        </student>
+        
+</StudentDetails>
