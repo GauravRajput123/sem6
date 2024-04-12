@@ -12,5 +12,26 @@
         <ActorName>Sunny Deol</ActorName>
         <ReleaseYear>2023</ReleaseYear>
     </MovieInfo>
+    <MovieInfo>
+        <MovieNo>3</MovieNo>
+        <MovieTitle>Shaitaan</MovieTitle>
+        <ActorName>Ajay Devgn</ActorName>
+        <ReleaseYear>2024</ReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>4</MovieNo>
+        <MovieTitle>Merry Christmas</MovieTitle>
+        <ActorName>
+Katrina Kaif</ActorName>
+        <ReleaseYear>2024</ReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>5</MovieNo>
+        <MovieTitle>Dunki</MovieTitle>
+        <ActorName>
+ShahRukh Khan</ActorName>
+        <ReleaseYear>2024</ReleaseYear>
+    </MovieInfo>
     <!-- Add more MovieInfo elements as needed -->
 </Movies>
+
