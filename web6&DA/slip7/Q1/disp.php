@@ -11,9 +11,11 @@ foreach ($movieInfos as $movieInfo) {
     // Get MovieTitle and ActorName elements for each MovieInfo
     $movieTitle = $movieInfo->getElementsByTagName("MovieTitle")->item(0)->nodeValue;
     $actorName = $movieInfo->getElementsByTagName("ActorName")->item(0)->nodeValue;
+     $ReleaseYear = $movieInfo->getElementsByTagName("ReleaseYear")->item(0)->nodeValue;
+     
 
     // Print MovieTitle and ActorName
-    echo "Movie Title: $movieTitle, Actor Name: $actorName<br>";
+    echo "Movie Title: $movieTitle, Actor Name: $actorName, Release Year: $ReleaseYear<br>";
 }
 ?>
 
