@@ -3,24 +3,18 @@ package sem6.Java.practicals.slip12;
 import java.sql.*;
 import javax.swing.*;
 
-/*
--- Table: public.project
+//CREATE TABLE IF NOT EXISTS PROJECT (
+//    project_id SERIAL PRIMARY KEY,
+//    Project_name TEXT,
+//    Project_description TEXT,
+//    Project_Status TEXT
+//);
+//INSERT INTO PROJECT (Project_name, Project_description, Project_Status)
+//VALUES 
+//    ('Project 1', 'Description of Project 1', 'InProgress'),
+//    ('Project 2', 'Description of Project 2', 'Completed'),
+//    ('Project 3', 'Description of Project 3', 'Pending');
 
--- DROP TABLE IF EXISTS public.project;
-
-CREATE TABLE IF NOT EXISTS public.project
-(
-    id bigint NOT NULL DEFAULT nextval('project_id_seq'::regclass),
-    name text COLLATE pg_catalog."default",
-    description text COLLATE pg_catalog."default",
-    status text COLLATE pg_catalog."default"
-)
-
-TABLESPACE pg_default;
-
-ALTER TABLE IF EXISTS public.project
-    OWNER to postgres;
-*/
 /**
  * Write a Java Program to create a PROJECT table with field’s project_id,
  * Project_name, Project_description, Project_Status. Insert values in the
